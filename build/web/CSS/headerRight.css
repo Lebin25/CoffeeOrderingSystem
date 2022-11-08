@@ -1,0 +1,40 @@
+.header__top__right ul{
+    list-style: none;
+    display: flex;
+    margin-top: 8px;
+    margin-right: -34px;
+}
+
+.header__top__right ul li a{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header__top__left ul li a:hover,
+.header__top__right ul li a:hover{
+    text-decoration: none;
+}
+
+.header__top__right ul li:first-child{
+    margin-right: 30px;
+}
+
+.header__top__right ul li:last-child{
+    margin-left: 30px;
+    position: absolute;
+    right: -48px;
+    top: 36px;
+}
+
+.header__top__right ul li{
+    position: relative;
+}
+
+
+.admin_action:after{
+    position: absolute;
+    right: -19px;
+    top: -2px;
+    content: "|";
+    color: #bbbbbb;
+}

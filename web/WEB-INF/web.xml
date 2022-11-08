@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/edit_product.jsp</url-pattern>
+        <url-pattern>/edit_category.jsp</url-pattern>
+        <url-pattern>/manage_category.jsp</url-pattern>
+        <url-pattern>/manage_orders.jsp</url-pattern>
+        <url-pattern>/manage_products.jsp</url-pattern>
+        <url-pattern>/view_order.jsp</url-pattern>
+        <url-pattern>/view_order.jsp</url-pattern>
+        <url-pattern>/delete_account</url-pattern>
+        <url-pattern>/delete_order</url-pattern>
+        <url-pattern>/manager_orders</url-pattern>
+        <url-pattern>/view_order</url-pattern>
+        <url-pattern>/add_category</url-pattern>
+        <url-pattern>/add_product</url-pattern>
+        <url-pattern>/delete_category</url-pattern>
+        <url-pattern>/delete_product</url-pattern>
+        <url-pattern>/edit_category</url-pattern>
+        <url-pattern>/edit_product</url-pattern>
+        <url-pattern>/load_category</url-pattern>
+        <url-pattern>/load_product</url-pattern>
+        <url-pattern>/manager_category</url-pattern>
+        <url-pattern>/manager_products</url-pattern>
+        <url-pattern>/sortCategory_Decrease</url-pattern>
+        <url-pattern>/sortCategory_Increase</url-pattern>
+        <url-pattern>/sortId_Decrease</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>UpdateAccount_User</filter-name>
+        <filter-class>filter.UpdateAccount_User</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UpdateAccount_User</filter-name>
+        <url-pattern>/load_account</url-pattern>
+    </filter-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
+
